@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="format-detection" content="telephone-no">
+  <meta name="description" content="агентство meddig - команда специалистов по разработке и продвижению сайтов медицинских клиник и персональных сайтов врачей.">
+  <meta name="keywords" content="разработка, сайты, веб, медицинские сайты">
+  <!-- <meta name="robots" content="none"> -->
+  <meta name="Author" content="Meddig">
+  <meta name="Copyright" content="Meddig">
+
+  <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+  <meta property="og:locale" content="ru_RU">
+  <!-- тип контента, по умолчанию используется article -->
+  <meta property="og:type" content="article">
+  <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+  <meta property="og:title" content="Meddig - разработка, поддержка и реклама сайтов медицинских организаций">
+  <!-- описание страницы -->
+  <meta property="og:description" content="Агентство meddig - команда специалистов по разработке и продвижению сайтов медицинских клиник и персональных сайтов врачей.">
+  <!-- ссылка на изображение, которое будет публиковаться в записи -->
+  <meta property="og:image" content="./images/content/logo.png">
+  <!-- ссылка на текущую страницу -->
+  <meta property="og:url" content="http://meddig.ru/index/">
+  <!-- название сайта -->
+  <meta property="og:site_name" content="Meddig - разработка, поддержка и реклама сайтов медицинских организаций">
+
+  <!-- Тип карты, по умолчанию используется summary -->
+  <meta name="twitter:card" content="summary">
+  <!-- Имя/логин автора -->
+  <meta name="twitter:site" content="Meddig">
+  <!-- Название страницы -->
+  <meta name="twitter:title" content="Meddig - разработка, поддержка и реклама сайтов медицинских организаций">
+  <!-- Описание страницы -->
+  <meta name="twitter:description" content="Агентство meddig - команда специалистов по разработке и продвижению сайтов медицинских клиник и персональных сайтов врачей.">
+  <!-- Cсылка на изображение -->
+  <meta name="twitter:image" content="/img/logo.png">
+
+  <link rel="stylesheet" type="text/css" href="css/--style.css">
+
+  @@include('partials/favicon.html')
+
+  <title>Meddig - разработка, поддержка и реклама сайтов медицинских организаций</title>
+
+  <!-- additional_styles_start ------------------------------------------------------------------ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- additional_styles_end ------------------------------------------------------------------ -->
+
+  <!-- connections_start ---------------------------------------------------------------- -->
+  <meta name="facebook-domain-verification" content="xe3dey1jq3nuhkozox3xov8fpet140" />
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '292166092572614');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=292166092572614&ev=PageView
+  &noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(80002405, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/80002405" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <!-- connections_end ---------------------------------------------------------------- -->
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__logo" data-scroll=".wrapper"></div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <ul class="header__link"><a href="#" class="header__text  header__text--link" data-scroll=".intro">О нас</a></ul>
+              <ul class="header__link"><a href="#" class="header__text  header__text--link" data-scroll=".portfolio">Портфолио</a></ul>
+              <ul class="header__link"><a href="#" class="header__text  header__text--link" data-scroll=".services">Услуги</a></ul>
+              <ul class="header__link"><a href="#" class="header__text  header__text--link" data-scroll=".slider">Отзывы</a></ul>
+            </ul>
+            <div class="communication  communication--mobile">
+              <a href="tel:+74992880779" class="communication__phone"><span class="communication__text">+7 499 288 07 79</span></a>
+              <button class="communication__callback" id="callback_mobile_button"><span class="communication__text">Оставить заявку</span></button>
+            </div>
+          </nav>
+          <div class="communication  communication--header">
+            <a href="tel:+74992880779" class="communication__phone"><span class="communication__text">+7 499 288 07 79</span></a>
+            <button class="communication__callback" id="callback_header_button"><span class="communication__text">Оставить заявку</span></button>
+          </div>
+          <button class="burger"><span class="burger__line"></span></button>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <main class="content">
+
+      <div class="intro">
+        <div class="container">
+          <div class="intro__body">
+            <div class="intro__item  intro__item--first">
+              <h1 class="intro__title"><span class="intro__text  intro__text--title">Разрабатываем сайты<br><span class="intro__text  intro__text--green">для врачей и клиник</span><br>как никто другой</span></h1>
+            </div>
+            <div class="intro__item  intro__item--second">
+              <div class="intro__subtitle">
+                <span class="intro__text  intro__text--subtitle">А также занимаемся продвижением и техподдержкой</span>
+                <button class="button-arrow  button-arrow--green  intro__callback"><span class="button-arrow__text">Оставить заявку</span></button>
+              </div>
+            </div>
+            <div class="intro__item  intro__item--third">
+              <div class="intro__slogan"><span class="intro__text  intro__text--slogan">Мы делаем сайты<br><span class="intro__text  intro__text--green">можем сделать и вам</span></span></div>
+              <div class="intro__description"><span class="intro__text  intro__text--description">Агентство meddig - команда специалистов по разработке и продвижению сайтов медицинских клиник и персональных сайтов врачей. Мы знаем и понимаем специфику, которая присутствует в данной нише и умеем делать современные технологичные сайты, которые привлекут ваших клиентов.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- intro -->
+
+      <div class="portfolio">
+        <div class="container">
+          <div class="portfolio__body">
+            <div class="portfolio__item  portfolio__item--1">
+              <div class="portfolio__title"><span class="portfolio__text  portfolio__text--title">Редизайн сайта пластического хирурга Сергея Морозова</span></div>
+              <a target="_blank" href="http://morozov-plastica.ru/" class="button-arrow  button-arrow--white"><span class="button-arrow__text">Перейти на сайт</span></a>
+            </div>
+            <div class="portfolio__item  portfolio__item--2">
+              <div class="portfolio__title"><span class="portfolio__text  portfolio__text--title">Продвижение сайта Angio Clinic</span></div>
+              <a target="_blank" href="https://angioclinic.ru/" class="button-arrow  button-arrow--white"><span class="button-arrow__text">Перейти на сайт</span></a>
+            </div>
+            <div class="portfolio__item  portfolio__item--3">
+              <div class="portfolio__title"><span class="portfolio__text  portfolio__text--title">Техподдержка сайта Palisa Venart</span></div>
+              <a target="_blank" href="https://palisa-venart.ru/" class="button-arrow  button-arrow--white"><span class="button-arrow__text">Перейти на сайт</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- portfolio -->
+
+      <div class="services">
+        <div class="container">
+          <div class="services__title">
+            <div class="services__text  services__text--title">Услуги</div>
+          </div>
+          <div class="services__body">
+            <div class="services__wrap">
+              <div class="services__item">
+                <div class="services__name"><span class="services__text  services__text--name">Разработка сайта медучреждения</span></div>
+                <div class="services__price"><span class="services__text  services__text--price">от 80 000 ₽</span></div>
+              </div>
+              <div class="services__item">
+                <div class="services__name"><span class="services__text  services__text--name">Разработка персонального сайта специалиста</span></div>
+                <div class="services__price"><span class="services__text  services__text--price">от 50 000 ₽</span></div>
+              </div>
+              <div class="services__item">
+                <div class="services__name"><span class="services__text  services__text--name">Интеграция с МИС и другими системами</span></div>
+                <div class="services__price"><span class="services__text  services__text--price">от 10 000 ₽/мес</span></div>
+              </div>
+              <div class="services__item">
+                <div class="services__name"><span class="services__text  services__text--name">Ведение аккаунтов
+                    в соцсеях</span></div>
+                <div class="services__price"><span class="services__text  services__text--price">от 20 000 ₽</span></div>
+              </div>
+              <div class="services__item">
+                <div class="services__name"><span class="services__text  services__text--name">Продвижение и реклама</span></div>
+                <div class="services__price"><span class="services__text  services__text--price">от 15 000 ₽/мес</span></div>
+              </div>
+              <div class="services__item">
+                <div class="services__name"><span class="services__text  services__text--name">Техподдержка и доработка существующего сайта</span></div>
+                <div class="services__price"><span class="services__text  services__text--price">от 20 000 ₽/мес</span></div>
+              </div>
+            </div>
+            <div class="services__wrap">
+              <form class="callback  callback--services" action="./php/mail.php" method="POST" enctype="multipart/form-data" autocomplete="off">
+                <input type="hidden" name="form_mark" value="форма в блоке услуги">
+                <div class="callback__title"><span class="callback__text  callback__text--title">Оставить заявку</span></div>
+                <div class="callback__wrap">
+                  <div class="callback__item">
+                    <input type="text" class="callback__input" name="user_name" placeholder="Ваше имя">
+                  </div>
+                  <div class="callback__item">
+                    <input type="tel" class="callback__input" name="user_phone" id="services-phone" placeholder="Номер телефона">
+                  </div>
+                </div>
+                <div class="callback__item  callback__item--agreement">
+                  <input type="checkbox" class="callback__input  callback__input--agreement" name="user_agreement" checked>
+                  <label for="user_agreement" class="callback__label  callback__label--agreement">
+                    <span class="callback__text  callback__text--agreement">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.<br>Узнать больше.</span>
+                  </label>
+                </div>
+                <button type="submit" class="button-arrow  button-arrow--white">
+                  <span class="button-arrow__text">Оставить заявку</span>
+                </button>
+              </form>
+              <!-- callback -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- services -->
+
+      <div class="slider">
+        <div class="container">
+          <div class="slider__body">
+            <div>
+              <div class="slider__item">
+                <div class="slider__title"><span class="slider__text  slider__text--title">Отзывы</span></div>
+                <div class="slider__review">
+                  <div class="slider__description"><span class="slider__text  slider__text--description">
+                      <p class="slider__paragraph">Работаем с командой Meddig лет 5 точно. Начиная с разработки сайтов, заканчивая их полным обслуживанием. Всегда все четко по срокам. Никогда не было недопониманий ни с дизайнерами, ни с копирайтерами, ни с техническими службами. Новую тематику сотрудники осваивают быстро и не требуется дальнейшего погружения в отчеты, что немаловажно для медицины.</p>
+                      <p class="slider__paragraph">Всегда на связи, что бы не произошло. Спасибо большое за совместную работу!</p>
+                    </span></div>
+                  <div style="opacity: 0;" class="slider__scan  slider__scan--01"><span class="slider__text  slider__text--scan">Смотреть скан отзыва</span></div>
+                  <div class="slider__client">
+                    <div class="slider__photo  slider__photo--01"></div>
+                    <div class="slider__credentials">
+                      <div class="slider__name"><span class="slider__text  slider__text--name">Екатерина Размыслова</span></div>
+                      <div class="slider__job"><span class="slider__text  slider__text--job">Ассистент пластического хирурга</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide -->
+            <div>
+              <div class="slider__item">
+                <div class="slider__title"><span class="slider__text  slider__text--title">Отзывы</span></div>
+                <div class="slider__review">
+                  <div class="slider__description"><span class="slider__text  slider__text--description">
+                      <p class="slider__paragraph">Компания ООО "Инновационный Сосудистый Центр" уже более 2 лет сотрудничает с Meddig. За все время нашей работы с мы достигли хороших результатов в таргетированной рекламе. Увеличилось количество звонков и пациентов. Мы достигли поставленных задач по стоимости заявки и количеству пациентов.</p>
+                      <p class="slider__paragraph">Компания ООО "Инновационный Сосудистый Центр" удовлетворена сотрудничеством с ИП Станаев Д.С. Рекомендуем ИП Станаев Д.С. как зарекомендовавших себя с положительной стороны профессионалов в области таргетированной рекламы.</p>
+                    </span></div>
+                  <div class="slider__scan  slider__scan--02"><span class="slider__text  slider__text--scan">Смотреть скан отзыва</span></div>
+                  <div class="slider__client">
+                    <div class="slider__photo  slider__photo--02"></div>
+                    <div class="slider__credentials">
+                      <div class="slider__name"><span class="slider__text  slider__text--name">Седов А.В.</span></div>
+                      <div class="slider__job"><span class="slider__text  slider__text--job">Генеральный директор</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide -->
+            <div>
+              <div class="slider__item">
+                <div class="slider__title"><span class="slider__text  slider__text--title">Отзывы</span></div>
+                <div class="slider__review">
+                  <div class="slider__description"><span class="slider__text  slider__text--description">
+                      <p class="slider__paragraph">Компания ООО "Клиника Инновационной Хирургии" выражает огромную благодарность всему коллективу Meddig за внимательное отношение и профессиональный подход к ведению нашего проекта, благодаря которым все работы на нашем корпоративном сайте https://angioclinic.ru/ велись в срок.</p>
+                      <p class="slider__paragraph">За несколько лет успешного партнерства результаты Вашей работы не заставили себя ждать — количество обращений через интернет увеличилось, так как наш сайт находится на первых позициях в поисковой системе Яндекс.</p>
+                      <p class="slider__paragraph">Желаем компании Meddig дальнейшего процветания и профессионального роста!</p>
+                    </span></div>
+                  <div class="slider__scan  slider__scan--03"><span class="slider__text  slider__text--scan">Смотреть скан отзыва</span></div>
+                  <div class="slider__client">
+                    <div class="slider__photo  slider__photo--03"></div>
+                    <div class="slider__credentials">
+                      <div class="slider__name"><span class="slider__text  slider__text--name">Калитко И.М.</span></div>
+                      <div class="slider__job"><span class="slider__text  slider__text--job">Генеральный директор</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide -->
+            <!-- <div>
+              <div class="slider__item">
+                <div class="slider__title"><span class="slider__text  slider__text--title">Отзывы</span></div>
+                <div class="slider__review">
+                  <div class="slider__description"><span class="slider__text  slider__text--description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga unde cumque ipsam similique praesentium, repudiandae distinctio eum beatae error atque repellendus ut totam vel nesciunt natus! Corporis, soluta. Hic id consequuntur ad a ipsam quis officia sed rem labore officiis!</span></div>
+                  <div class="slider__scan  slider__scan--04"><span class="slider__text  slider__text--scan">Смотреть скан отзыва</span></div>
+                  <div class="slider__client">
+                    <div class="slider__photo"></div>
+                    <div class="slider__credentials">
+                      <div class="slider__name"><span class="slider__text  slider__text--name">One More Name</span></div>
+                      <div class="slider__job"><span class="slider__text  slider__text--job">One More Job</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- slide -->
+          </div>
+        </div>
+      </div>
+      <!-- slider -->
+
+      <div class="contacts">
+        <div class="contacts__map">
+          <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acbbc37f90d9fc067238d2a389b72b4e4c2b2b0c9d39a7257bd93a9c7e6e2f6e6&amp;source=constructor" frameborder="0"></iframe>
+        </div>
+        <div class="form">
+          <div class="container">
+            <div class="form__body">
+              <form class="callback  callback--contacts" action="./php/mail.php" method="POST" enctype="multipart/form-data" autocomplete="off">
+                <input type="hidden" name="form_mark" value="форма в блоке контакты">
+                <div class="callback__address"><span class="callback__text  callback__text--address">Москва, ул. Станиславского, д. 22, стр. 2</span></div>
+                <div class="callback__contacts"><a class="callback__link" href="tel:+74992880779">+7 499 288 07 79</a> / <a class="callback__link" href="mailto:hello@meddig.ru">hello@meddig.ru</a></div>
+                <div class="callback__subtitle"><span class="callback__text  callback__text--subtitle">Напишите нам, будем знакомы <i class="fas fa-pen"></i></span></div>
+                <div class="callback__wrap">
+                  <div class="callback__item">
+                    <input type="text" class="callback__input" name="user_name" placeholder="Ваше имя">
+                  </div>
+                  <div class="callback__item">
+                    <input type="tel" class="callback__input" name="user_phone" id="contacts-phone" placeholder="Номер телефона">
+                  </div>
+                </div>
+                <div class="callback__item  callback__item--agreement">
+                  <input type="checkbox" class="callback__input  callback__input--agreement" name="user_agreement" checked>
+                  <label for="user_agreement" class="callback__label  callback__label--agreement">
+                    <span class="callback__text  callback__text--agreement">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.<br>Узнать больше.</span>
+                  </label>
+                </div>
+                <button type="submit" class="button-arrow  button-arrow--green">
+                  <span class="button-arrow__text">Оставить заявку</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contacts -->
+
+      <div class="popup-callback">
+        <div class="popup-callback__body">
+          <form class="callback  callback--popup" action="./php/mail.php" method="POST" enctype="multipart/form-data" autocomplete="off">
+            <input id="popup-form" type="hidden" name="form_mark" value="форма в попапе">
+            <div class="callback__title"><span class="callback__text  callback__text--title">Оставить заявку</span></div>
+            <div class="callback__wrap">
+              <div class="callback__item">
+                <input type="text" class="callback__input" name="user_name" placeholder="Ваше имя">
+              </div>
+              <div class="callback__item">
+                <input type="tel" class="callback__input" name="user_phone" id="popup-phone" placeholder="Номер телефона">
+              </div>
+            </div>
+            <div class="callback__item  callback__item--agreement">
+              <input type="checkbox" class="callback__input  callback__input--agreement" name="user_agreement" checked>
+              <label for="user_agreement" class="callback__label  callback__label--agreement">
+                <span class="callback__text  callback__text--agreement">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.<br>Узнать больше.</span>
+              </label>
+            </div>
+            <button type="submit" class="button-arrow  button-arrow--green">
+              <span class="button-arrow__text">Оставить заявку</span>
+            </button>
+          </form>
+          <div class="popup-close"></div>
+        </div>
+      </div>
+      <!-- popup-callback -->
+
+      <div class="message">
+        <div class="message__body">
+          <div class="message__title"><span class="message__text  message__text--title">Ваша заявка успешно отправлена</span></div>
+          <div class="message__subtitle"><span class="message__text  message__text--subtitle">Ждите нашего звонка. Мы свяжемся с вами в ближайшее время.</span></div>
+          <button class="button-arrow  button-arrow--green  message__ok"><span class="button-arrow__text">Хорошо</span></button>
+          <div class="popup-close"></div>
+        </div>
+      </div>
+      <!-- message -->
+
+      <!-- <div class="scan  scan--01">
+        <div class="scan__item  scan__item--01">
+          <div class="popup-close  popup-close--scan"></div>
+        </div>
+      </div> -->
+      <!-- scan_01 -->
+
+      <div class="scan  scan--02">
+        <div class="scan__item  scan__item--02">
+          <div class="popup-close  popup-close--scan"></div>
+        </div>
+      </div>
+      <!-- scan_02 -->
+
+      <div class="scan  scan--03">
+        <div class="scan__item  scan__item--03">
+          <div class="popup-close  popup-close--scan"></div>
+        </div>
+      </div>
+      <!-- scan_03 -->
+
+      <!-- <div class="scan  scan--04">
+        <div class="scan__item  scan__item--04">
+          <div class="popup-close  popup-close--scan"></div>
+        </div>
+      </div>-->
+      <!-- scan_04 -->
+
+    </main>
+    <!-- main -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__copyright">
+            <span class="footer__text  footer__text--copyright">© MEDDIG 2019-2021</span>
+            <span class="footer__text  footer__text--copyright">ИП Станаев</span>
+          </div>
+          <div class="communication  communication--footer">
+            <a href="tel:+74992880779" class="communication__phone"><span class="communication__text">+7 499 288 07 79</span></a>
+            <button class="communication__callback" id="callback_footer_button">
+              <span class="communication__text">Оставить заявку</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+  </div>
+  <!-- wrapper -->
+
+  <!-- scripts ------------------------------------------------------------------------------------------- -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/6432d1924e.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+  <script src="js/--script.js"></script>
+
+</body>
+
+</html>
