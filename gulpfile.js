@@ -64,7 +64,8 @@ function html() {
     .pipe(
       htmlmin({
         collapseWhitespace: true,
-        removeComments: true
+        removeComments: true,
+        minifyJS: true
       })
     )
     .pipe(dest(path.build.html))
