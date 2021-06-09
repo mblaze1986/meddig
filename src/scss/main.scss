@@ -221,8 +221,7 @@ input {
     align-items: center;
 
     &:before {
-      content: '\f879';
-      font-family: 'FontAwesome';
+      content: '☎️';
       display: inline-flex;
       width: em(24);
       height: em(24);
@@ -251,8 +250,7 @@ input {
     }
 
     &:before {
-      content: '\f164';
-      font-family: 'FontAwesome';
+      content: '🤙';
       display: inline-flex;
       width: em(24);
       height: em(24);
