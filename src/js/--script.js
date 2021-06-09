@@ -3,3 +3,4 @@
 @@include('callback-popup.js')
 @@include('callback-services.js')
 @@include('scan.js')
+@@include('lazy.js')
