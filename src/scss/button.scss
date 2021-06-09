@@ -31,7 +31,7 @@
   }
 
   &--green {
-    color: rgb(21, 204, 161);
+    color: $green;
 
     &:before {
       background: url(../img/arrow-button-green.svg) 0 0/100% 100% no-repeat;
@@ -43,7 +43,7 @@
   }
 
   &--white {
-    color: rgb(255, 255, 255);
+    color: $white;
 
     &::before {
       background: url(../img/arrow-button-white.svg) 0 0/100% 100% no-repeat;
